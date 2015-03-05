@@ -18,6 +18,13 @@ window.onload = function() {
                 [4, 4, 4, 4, 4, 4, 4]
             ]
         );
+        bear = new Sprite(32, 32);
+
+        bear.image = game.assets["https://raw.githubusercontent.com/wise9/enchant.js/master/examples/beginner/map/chara1.png"];
+
+        bear.x = 0;
+        bear.y = 0;
+        bear.frame = 5;
         game.rootScene.addChild(map);
     };
     game.start();
