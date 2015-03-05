@@ -9,7 +9,7 @@ window.onload = function() {
         map.image = game.assets['https://raw.githubusercontent.com/wise9/enchant.js/master/examples/beginner/map/map0.png'];
         map.loadData(
             [
-                [4, 4, 4, 4, 4, 4, 4],
+                [4, 5, 4, 4, 4, 4, 4],
                 [4, 5, 5, 5, 5, 5, 4],
                 [4, 5, 4, 5, 4, 5, 4],
                 [4, 5, 5, 5, 5, 5, 4],
