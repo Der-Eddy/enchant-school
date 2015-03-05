@@ -25,6 +25,7 @@ window.onload = function() {
         bear.x = 0;
         bear.y = 0;
         bear.frame = 5;
+        game.rootScene.addChild(bear);
         game.rootScene.addChild(map);
     };
     game.start();
