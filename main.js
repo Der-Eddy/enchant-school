@@ -1,12 +1,5 @@
 enchant();
 
-enchant.Sound.enabledInMobileSafari = true;
-
-if(location.protocol == 'file:'){
-    enchant.ENV.USE_WEBAUDIO = false;
-    console.log('1');
-}
-
 window.onload = function() {
     var Rectangle = enchant.Class.create({
         initialize: function(x, y, width, height) {
@@ -189,12 +182,6 @@ window.onload = function() {
                 this.x = 64 - bear.x;
             }
         });
-        var pad = new Pad();
-        pad.x = 0;
-        pad.y = 224;
-        game.rootScene.addChild(stage);
-        game.rootScene.addChild(pad);
-        game.rootScene.backgroundColor = 'rgb(182, 255, 255)';
     };
     game.start();
 };
