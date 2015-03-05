@@ -25,13 +25,13 @@ window.onload = function() {
         bear.x = 1;
         bear.y = 1;
         bear.frame = 5;
+        game.rootScene.addChild(map);
         game.rootScene.addChild(bear);
         bear.addEventListener("enterframe", function(){
         this.x += 1;
         this.frame = this.age % 2 + 6;
         });
 
-        game.rootScene.addChild(map);
     };
     game.start();
 };
