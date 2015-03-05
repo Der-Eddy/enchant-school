@@ -33,6 +33,5 @@ window.onload = function() {
         });
 
     };
-    game.scale(2,2);
     game.start();
 };
