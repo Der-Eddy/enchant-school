@@ -3,10 +3,10 @@ enchant();
 window.onload = function() {
     var game = new Game(320, 320);
     game.fps = 20;
-    game.preload('https://raw.githubusercontent.com/wise9/enchant.js/master/examples/beginner/map/chara1.png', 'https://raw.githubusercontent.com/wise9/enchant.js/master/examples/beginner/map/map0.png');
+    game.preload('chara1.png', 'map0.png');
     game.onload = function() {
         var map = new Map(16, 16);
-        map.image = game.assets['https://raw.githubusercontent.com/wise9/enchant.js/master/examples/beginner/map/map0.png'];
+        map.image = game.assets['map0.png'];
         map.loadData(
             [
                 [4, 5, 4, 4, 4, 4, 4],
@@ -20,7 +20,7 @@ window.onload = function() {
         );
         bear = new Sprite(32, 32);
 
-        bear.image = game.assets["https://raw.githubusercontent.com/wise9/enchant.js/master/examples/beginner/map/chara1.png"];
+        bear.image = game.assets["chara1.png"];
 
         bear.x = 1;
         bear.y = 1;
